@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+.hero{
+    background:  url(Bg-Image.jpg) no-repeat center center fixed  ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subscribe{
+    position: absolute;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+.subscribe:hover{
+    background-color: rgba(170, 165, 165,0.5);
+}
+
+.modalBg{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showDailog{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalContainer{
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 3rem;
+}
+
+.userName, .email, .submit-btn{
+    margin: 10px;
+    font-size: 1rem;
+    border: 1px grey solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.prompt-heading{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom:10px;
+}
+
+.submit-btn{
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2px;
+    cursor: pointer;
+    padding: 10px;
+    letter-spacing: 1px;
+    border:1px grey solid;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    cursor: pointer;
+}
